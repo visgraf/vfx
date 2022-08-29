@@ -1,0 +1,94 @@
+﻿Matchmove Software
+==================
+
+This is the software module responsible for implementing the Matchmove routines. 
+The outputs of this module are inputs of the module s3d-ptrace.
+
+
+CONTENTS
+--------
+
+The directory hierarchy structure is as follows:
+
+./mathcmove
+     /base      - Linux relatead source code
+     /data      - Data files
+     /demo      - Test scripts and auxiliar files
+     /include   - Headers files
+     /lib       - Library files
+     /bin       - Binary files
+      
+
+INSTALLATION
+------------
+
+To install the Linux software run the command:
+    make all
+
+This should generate, compile and install the libraries and applications.
+
+ABOUT THE INTRINSIC PARAMETERS
+------------------------------
+
+The intrinsic  parameters of the camera used for capturing the video 
+./matchmove/data/video.mp4 is stored in the file ./matchmove/data/g7cam.txt.
+The user can estimate intrinsic parameters by using a 3D pattern and the program
+ ./matchmove/proj/singlecam_nlin, described in the Section 4.11 of the book, 
+and implemented in the file ./matchmove/proj/singlecam_nlin/main.c. 
+Another option is using a 2D pattern and the OpenCV application available in the 
+site https://docs.opencv.org/4.x/d4/d94/tutorial_camera_calibration.html
+
+TESTING
+-------
+
+There are four scripts inside the directory ./matchmove/demo designed to exemplify
+how to use the software routines. 
+
+The scripts do the following processing:
+
+d1: This script executes the tracking, pose estimation and relaxation processing
+necessaries for producing a global optimal and robust matchmove result of the 
+video ./matchmove/data/video.mp4. As the output, it produces the file 
+./matchmove/demo/cam_refined.txt.
+This software implements the code of the Sections: 6.7, 7.16 and 7.17 of the book.  
+
+d2: This script captures the 3D coordinates of 3 points defined by theirs 
+projections over some frames. More preciselly, it rurns the program presented
+ in the Section 8.3 of the book. As the result, it produces the outputfile
+  ./matchmove/demo/points3d.txt.  These points are used by the module 
+  ./s3d-ptrace to specify the geometry of the polygon that projects the shadows
+  of synthetic objects
+
+d3: This script firstly capures coordinates of six 3D points over some frames of 
+the video ./matchmove/data/video.mp4. This coordinates are used to estimate the
+3D coordinate of them. In the case of our demo, we selected the 6 points presented
+in the picture ./mathcmove/data/calib.jpg, and their respective 3D points have been 
+stored in the file ./matchmove/demo/calib_points.txt.
+    After that, the script puts this six 3D coordinates in correspondence to the 2D
+projection presented in ./mathcmove/data/calib.jpg. This picture corresponds 
+to an image captured in the same point of view as the one used for capturing the
+mirror ball pictures without zoom in. As a result it generates the files: 
+./matchmove/demo/k, ./matchmove/demo/r,  ./matchmove/demo/t, correspondent to the 
+camera k[r|t] produced by the the program described in the Section 4.12 of the 
+book. The output file ./matchmove/demo/r is important, because it is used by the
+scene  modeler tool of the module ./s3d-ptrace as explained in the Section 10.8
+of the book.
+
+d4: This script is responsible for copying the output files of this module to the
+module s3d-ptrace
+
+
+COMPATIBILITY
+-------------
+
+This software was developed using GNU tools under the
+Linux operating system.
+
+
+REQUIREMENTS
+------------
+
+The software needs the following development tools  sh, make, gcc and g++. It uses
+ the library GSL.
+
+Copyright 2022 - Bruno Madeira & Luiz Velho

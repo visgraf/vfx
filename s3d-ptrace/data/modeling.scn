@@ -1,0 +1,34 @@
+hdrscene{
+
+        hdrdome { orig = { 0.456922, 0.471432, -0.754304 },
+                  south = { 0.084442, 0.821183, 0.564382 },
+                  hdrimg = "dome.pfm" },   
+
+	camera = view { imgw = 1280, imgh = 720 },
+
+
+	 shadow = plshadow{
+		material = plastic { kd = 1.0., ks = 0, kt = 0,
+				d_col = {0.576563, 0.539570, 0.466020} },
+		
+               shape = trilist { {{-2.025590, 0.175004, 25.902188},  {0.416268, 3.603567, 21.183216}, {7.733686, -3.205827, 29.644684}},                             {{7.733686, -3.205827, 29.644684},  {0.416268, 3.603567, 21.183216}, {10.175544, 0.222736, 24.925712}}  }
+        }
+
+		
+       object = primobj{ 
+                  material = plastic { kd = 0, ks = 1.0, kt = 0, se = -1
+				d_col = {1, 1, 1}, s_col = {1,1,1}},
+		  
+                 shape = sphere{ center = {1.606238, -0.314628, 25.228346}, radius = 0.632348}
+
+       }
+       
+        object = primobj{ 
+                  material = plastic { kd = .5, ks = 0.3, kt = 0, 
+				d_col = {0.6, 0.6, 1}, s_col = {1,1,1}},
+		  
+                 shape = sphere{ center = {4.046465, -0.305081, 25.033051}, radius = 0.632348}
+       }
+                                        
+};
+

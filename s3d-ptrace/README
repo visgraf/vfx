@@ -1,0 +1,114 @@
+﻿Visual Effects Software
+=======================
+
+This is the software module responsible for implementing the Pathtracing and
+Image Based Lighting routines. It uses as its inputs files generated  by the
+module ./matchmove. 
+
+
+CONTENTS
+--------
+
+The directory hierarchy structure is as follows:
+
+./s3d-ptrace
+     /core      - Linux relatead source code
+     /data      - Data files
+     /demo      - Test scripts and auxiliar files
+     /platforms - Deployment
+     /build     - CMake build directory
+      
+./s3d-ptrace/core
+     /base    - Source of the Base library
+     /proj    - Source of the Applications
+
+
+./s3d-ptrace/demo    - Scripts to Run the demos
+
+./s3d/platforms
+     /linux/bin     - Executables
+     /linux/lib     - Libraries
+     /linux/include - Header files
+
+
+INSTALLATION
+------------
+
+To install the Linux software run these commands in the "build" directory
+    cmake ../core
+    make
+    make install
+
+This should generate, compile and install the libraries and applications.
+
+
+TESTING
+-------
+
+There are five scripts inside the directory ./s3d-ptrace/demo designed to exemplify
+how to use the software routines. Besides that, there are many other files
+ necessary for running the scripts in the correct way. Most of them are generated
+by the module matchmove. 
+
+The scripts do the following processing:
+
+d0.sh: This script converts the video ./s3d-ptrace/demo/video.mp4 into hdr images,
+stored in files of the form bk%d.pfm, in which %d is an integer. These are the 
+images used as the background of the Visual Effect
+
+d1.sh: This script calculate and shows the "d_col" RGB coordinates of the 
+plshadow polygon, described in the file ./s3d-ptrace/data/modeling.scn, and 
+responsible for showing the shadow of the virtual objects. This software 
+implements the code of the Section 10.12 of the book.
+
+d2.sh: This script generates an image output.png generated using the pathtracing 
+software using the scene described in the file ./s3d-ptrace/data/cornell.scn.
+This software implements the code of the Section 9.13 of the book.
+
+d3.sh: This script produces 3 frames (2, 150, 230) of the matchmove effect,
+ global illumination and image based lighting correspondent to the scene
+  ./s3d-ptrace/data/modeling.scn and cameras described by the file 
+  ./s3d-ptrace/demo/cam_refined.txt. The output frames, named by out2.pfm, out150.pfm  
+  and out230.pfm, correspond to frames of demo video ./demo.mp4.
+ This software implements the code of the Section 10.13 of the book.
+  
+d4.sh: This script produces all the frames of the matchmove effect, global 
+illumination, and image based lighting  correspondent to the scene 
+./s3d-ptrace/data/modeling.scn  and cameras described by the file 
+./s3d-ptrace/demo/cam_refined.txt. The output frames, named by out%d.pfm, correspond to
+ the demo video ./demo.mp4. 
+This program takes more than 24Hs to generate all the frames using a core i7 machine.
+ The implementation of the code is presented on the Section 10.13 of the book. 
+
+d5.sh: This script runs a textual scene modeler tool designed to generate
+the code necessary to be inserted into a scene description file. The details
+of this tool is described in the file ./s3d-ptrace/modeler.pdf, and can be
+used to modify the scene ./s3d-ptrace/data/modeling.scn 
+
+
+Interdependence of the Modules
+------------------------------
+
+The scripts of this module have interdependence between them.
+In order to simplifying the process of testing, the
+input files necessary for running almost all the scripts are available.
+The unique exception are the dependence of 
+./s3d-ptrace/demo/d2, ./s3d-ptrace/demo/d3 and ./s3d-ptrace/demo/d4
+ which depend to the execution of ./s3d-ptrace/demo/d0 before.  
+Using the scripts defined on this package the user can generates
+ the video ./demo.mp4.
+ 
+
+COMPATIBILITY
+-------------
+
+This software was developed using GNU tools under the Linux operating system.
+
+
+REQUIREMENTS
+------------
+
+The software needs the following development tools cmake, sh, make, gcc, bison,
+ flex. It uses the imaging library libpng and the software Image Magick.
+
+Copyright 2022 - Bruno Madeira & Luiz Velho

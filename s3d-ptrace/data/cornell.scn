@@ -1,0 +1,69 @@
+scene{
+        polylight{  color = {9,9,9},
+                    shape = trilist {
+                            {{3.3,3.3,9.9999}, {6.6,3.3,9.9999}, {3.3,6.6,9.9999}},
+		            {{3.3,6.6,9.9999}, {6.6,3.3,9.9999}, {6.6,6.6,9.9999}}
+                    }
+        },          
+
+	camera = view {
+		from = {5, 20, 5}, at = {5, 0, 5}, up = {0,0,1}, fov = 60
+		imgw = 640, imgh = 480 },
+	
+	object = primobj{ 
+		material = plastic { kd = 0.4, ks = 0.9, kt =0, se = -1
+				d_col = {1, 1, 1}, s_col = {1,1,1}},
+		shape = sphere { center = {2, 3, 2}, radius = 2}},
+
+        object = primobj{ 
+		material = plastic { kd = 0.4, ks = 0.3, kt = 0, 
+				d_col = {.9, .9, .6}, s_col = {1,1,1}},
+		shape = sphere { center = {6, 6, 2}, radius = 2}},
+
+	object = primobj{ 
+		material = plastic {  kd = 0.4, ks = 0.3, kt = 0, 
+				d_col = {1, 1, 1}, s_col = {1,1,1}},
+		shape = sphere { center = {3, 6, .9}, radius = .9}},
+
+	object = polyobj {
+		material = plastic { kd = .4, ks = 0, kt = 0,
+				d_col = {.9, .9, .9}, s_col = {1,1,1}},
+		shape = trilist {
+			{{0, 0, 0},  {10, 0, 0}, {0, 10, 0}},
+			{{10, 10, 0}, {0, 10, 0}, {10, 0, 0}}
+		}},
+
+        object = polyobj {
+		material = plastic { kd = .4, ks = 0, kt = 0,
+				d_col = {.9, .9, .9}, s_col = {1,1,1}},
+		shape = trilist {
+			{{0, 0, 10},  {0, 10, 10}, {10, 0, 10}},
+			{{10, 10, 10}, {10, 0, 10}, {0, 10, 10}}
+		}},
+
+        object = polyobj {
+		material = plastic { kd = .4, ks = 0, kt = 0,
+				d_col = {.6, .6, .9}, s_col = {1,1,1}},
+		shape = trilist {
+			{{0,0,0},  {0,10,0}, {0,10, 10}},
+			{{0,0,0}, {0,10,10}, {0,0,10}}
+		}},
+
+        object = polyobj {
+		material = plastic { kd = .4, ks = 0, kt = 0, 
+				d_col = {.9, .6, .6}, s_col = {1,1,1}},
+		shape = trilist {
+			{{10,0,0},  {10,10,10}, {10,10, 0}},
+			{{10,0,0}, {10,0,10}, {10,10,10}}
+		}},
+
+        object = polyobj {
+		material = plastic { kd = .4, ks = 0, kt = 0, 
+				d_col = {.9, .9, .9}, s_col = {1,1,1}},
+		shape = trilist {
+			{{0,0,0},  {10,0,10}, {10,0, 0}},
+			{{0,0,0}, {0,0,10}, {10,0,10}}
+		}},
+	                                                   
+};
+
