@@ -56,14 +56,14 @@ d0.sh: This script converts the video ./s3d-ptrace/demo/video.mp4 into hdr image
 stored in files of the form bk%d.pfm, in which %d is an integer. These are the 
 images used as the background of the Visual Effect
 
-d1.sh: This script calculate and shows the "d_col" RGB coordinates of the 
+d1.sh: This script generates an image output.png generated using the pathtracing 
+software using the scene described in the file ./s3d-ptrace/data/cornell.scn.
+This software implements the code of the Section 9.13 of the book.
+
+d2.sh: This script calculate and shows the "d_col" RGB coordinates of the 
 plshadow polygon, described in the file ./s3d-ptrace/data/modeling.scn, and 
 responsible for showing the shadow of the virtual objects. This software 
 implements the code of the Section 10.12 of the book.
-
-d2.sh: This script generates an image output.png generated using the pathtracing 
-software using the scene described in the file ./s3d-ptrace/data/cornell.scn.
-This software implements the code of the Section 9.13 of the book.
 
 d3.sh: This script produces 3 frames (2, 150, 230) of the matchmove effect,
  global illumination and image based lighting correspondent to the scene
