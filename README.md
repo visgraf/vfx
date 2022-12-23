@@ -1,11 +1,11 @@
 # vfx
-code base for the book Introduction to Visual Effects
+code base for the book <a href="https://www.routledge.com/Introduction-to-Visual-Effects-A-Computational-Approach/Velho-Velho/p/book/9781032072302">Introduction to Visual Effects</a>
 
 Visual Effects Software
 =======================
 
-This is the companion software package of the book
-"Introduction to Visual Effects: A computational approach" 
+This is the companion software package of the book  <a href="https://www.routledge.com/Introduction-to-Visual-Effects-A-Computational-Approach/Velho-Velho/p/book/9781032072302">
+"Introduction to Visual Effects: A computational approach"</a> 
 by Bruno Madeira and Luiz Velho.
 
 The software contains an implementation of all the
