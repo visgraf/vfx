@@ -2,9 +2,9 @@
 code base for the book <a href="https://www.routledge.com/Introduction-to-Visual-Effects-A-Computational-Approach/Velho-Velho/p/book/9781032072302">Introduction to Visual Effects</a>
 
 Frame of an output video
-----------------------------
-
+-------------------------
 <p align="center"><img src="demo.png"></center></p>
+<p align="center">Two virtual spheres over a captured video.</p>
 
 Visual Effects Software
 =======================
