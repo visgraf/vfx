@@ -1,8 +1,8 @@
 # vfx
 code base for the book <a href="https://www.routledge.com/Introduction-to-Visual-Effects-A-Computational-Approach/Velho-Velho/p/book/9781032072302">Introduction to Visual Effects</a>
 
-Example of a frame of a video output
-------------------------------------
+Frame of an output video
+----------------------------
 
 <p align="center"><img src="demo.png"></center></p>
 
