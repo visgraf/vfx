@@ -45,6 +45,6 @@ The unique exception are the dependence of
 ./s3d-ptrace/demo/d2, ./s3d-ptrace/demo/d3 and ./s3d-ptrace/demo/d4
  which depend to the execution of ./s3d-ptrace/demo/d0 before.  
 Using the scripts defined on this package the user can generates
- the video ./demo.mp4.
+ the video ./video/demo.mp4.
  
 Copyright 2022 - Bruno Madeira & Luiz Velho
