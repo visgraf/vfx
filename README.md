@@ -1,10 +1,12 @@
 # vfx
 Code base for the book <a href="https://www.routledge.com/Introduction-to-Visual-Effects-A-Computational-Approach/Velho-Velho/p/book/9781032072302">Introduction to Visual Effects</a>. It implements: Matchmove, Global Illumination (Pathtracing), and is prepared for making Image Based Lighting in combination of the LuminanceHDR Software. As a result, it can generate simple realistic visual effects.
 
-Frame of an output video
+Example of a Result
 -------------------------
 <p align="center"><img src="demo.png"></center></p>
 <p align="center">Two virtual spheres over a captured video.</p>
+
+The complete video can be watched <a href="https://youtu.be/0dFbJLH55wE">here</a>.
 
 Visual Effects Software
 =======================
