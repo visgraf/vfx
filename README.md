@@ -1,5 +1,5 @@
 # vfx
-Code base for the book <a href="https://www.amazon.com/Introduction-Visual-Effects-Computational-Approach-ebook/dp/B0BJYBHMDP/ref=sr_1_1?keywords=introduction+to+visual+effects&qid=1673658651&sr=8-1">Introduction to Visual Effects</a>. It implements: Matchmove, Global Illumination (Pathtracing), and is prepared for making Image Based Lighting in combination of the LuminanceHDR Software. As a result, it can generate simple realistic visual effects.
+Code base for the book <a href="https://www.routledge.com/Introduction-to-Visual-Effects-A-Computational-Approach/Velho-Velho/p/book/9781032072302">Introduction to Visual Effects</a>. It implements: Matchmove, Global Illumination (Pathtracing), and is prepared for making Image Based Lighting in combination of the LuminanceHDR Software. As a result, it can generate simple realistic visual effects.
 
 Result Example
 -------------------------
@@ -11,7 +11,7 @@ The complete video can be watched <a href="https://youtu.be/0dFbJLH55wE">here</a
 Visual Effects Software
 =======================
 
-This is the companion software package of the book  <a href="https://www.amazon.com/Introduction-Visual-Effects-Computational-Approach-ebook/dp/B0BJYBHMDP/ref=sr_1_1?keywords=introduction+to+visual+effects&qid=1673658651&sr=8-1">
+This is the companion software package of the book  <a href="https://www.routledge.com/Introduction-to-Visual-Effects-A-Computational-Approach/Velho-Velho/p/book/9781032072302">
 "Introduction to Visual Effects: A computational approach"</a> 
 by Bruno Madeira and Luiz Velho.
 
