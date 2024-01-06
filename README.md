@@ -1,7 +1,5 @@
 # vfx
-Code base for the book <a href="https://www.routledge.com/Introduction-to-Visual-Effects-A-Computational-Approach/Velho-Velho/p/book/9781032072302">Introduction to Visual Effects: A computational approach</a>, also available on Amazon. It implements: Matchmove, Global Illumination (Pathtracing), and is prepared for making Image Based Lighting in combination of the LuminanceHDR Software. As a result, it can generate simple realistic visual effects.
-
-Amazon: https://www.amazon.com/Introduction-Visual-Effects-Computational-Approach-ebook/dp/B0BSLQ48W4/ref=sr_1_1?crid=3MUGQQUIXWECK&keywords=introduction+to+visual+effects&qid=1704557807&sprefix=introduction+to+visual+effects%2Caps%2C269&sr=8-1
+Code base for the book <a href="https://www.routledge.com/Introduction-to-Visual-Effects-A-Computational-Approach/Velho-Velho/p/book/9781032072302">Introduction to Visual Effects: A computational approach</a>, also available on <a href="https://www.amazon.com/Introduction-Visual-Effects-Computational-Approach-ebook/dp/B0BSLQ48W4/ref=sr_1_1?crid=3MUGQQUIXWECK&keywords=introduction+to+visual+effects&qid=1704557807&sprefix=introduction+to+visual+effects%2Caps%2C269&sr=8-1">Amazon</a>. It implements: Matchmove, Global Illumination (Pathtracing), and is prepared for making Image Based Lighting in combination of the LuminanceHDR Software. As a result, it can generate simple realistic visual effects.
 
 Result Example
 -------------------------
@@ -50,5 +48,16 @@ The unique exception are the dependence of
  which depend to the execution of ./s3d-ptrace/demo/d0 before.  
 Using the scripts defined on this package the user can generates
  the video ./video/demo.mp4.
- 
+
+<hr>
+
+<b>Links to the Book:</b>
+
+Amazon: https://www.amazon.com/Introduction-Visual-Effects-Computational-Approach-ebook/dp/B0BSLQ48W4/ref=sr_1_1?crid=3MUGQQUIXWECK&keywords=introduction+to+visual+effects&qid=1704557807&sprefix=introduction+to+visual+effects%2Caps%2C269&sr=8-1
+
+Routledge: https://www.routledge.com/Introduction-to-Visual-Effects-A-Computational-Approach/Velho-Velho/p/book/9781032072302
+
+<hr>
+
 Copyright 2022 - Bruno Madeira & Luiz Velho
+
