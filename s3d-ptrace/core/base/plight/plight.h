@@ -14,7 +14,7 @@ typedef struct PolyLight{
   Color c;
 } PolyLight;
 
-PolyLight *plight_head;
+extern PolyLight *plight_head;
 
 void init_plight_list( void );
 void plight_free( PolyLight *head );

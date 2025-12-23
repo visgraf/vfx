@@ -57,8 +57,15 @@ projections over some frames. More preciselly, it rurns the program presented
  in the Section 8.3 of the book. As the result, it produces the outputfile
   ./matchmove/demo/points3d.txt.  These points are used by the module 
   ./s3d-ptrace to specify the geometry of the polygon that projects the shadows
-  of synthetic objects
-
+  of synthetic objects. The user must do steps like these:
+  
+  1) select 3 points over the table
+  2) press space bar
+  3) move the slider bar to another frame
+  4) select the same points over the 3d table
+  repeat the steps 1 to 4 some times and press esc 
+  
+  
 d3: This script firstly capures coordinates of six 3D points over some frames of 
 the video ./matchmove/data/video.mp4. This coordinates are used to estimate the
 3D coordinate of them. In the case of our demo, we selected the 6 points presented

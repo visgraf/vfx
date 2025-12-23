@@ -1,0 +1,91 @@
+2025
+---------------------------------------------------------------------------------------
+
+1) Memory Deallocation Fix in Matchmove Software
+
+A memory deallocation issue was identified in the Matchmove software.
+
+In the file matchmove/base/sequence/seq.c, the function:
+
+void seq_subseq_list_create( CalibSequenceContext *cc )
+{
+    SubSeqNode *aux;
+    FeaturesList *fl;
+
+    features_list_begin_frag( cc->fl );
+    do {
+        seq_insert_subseq( cc, subseq_node_alloc( cc,
+            fl = features_list_get_next_frag( cc->fl,
+                                              FRAGMENT_NFRAMES,
+                                              MIN_MOV_DIST ) ));
+        features_list_dispose( fl );
+    } while( !features_list_end_frag() );
+}
+
+was replaced by:
+
+void seq_subseq_list_create( CalibSequenceContext *cc )
+{
+    features_list_begin_frag( cc->fl );
+
+    do {
+        seq_insert_subseq( cc, subseq_node_alloc( cc,
+            features_list_get_next_frag( cc->fl,
+                                         FRAGMENT_NFRAMES,
+                                         MIN_MOV_DIST ) ));
+    } while( !features_list_end_frag() );
+}
+
+This change fixes an incorrect memory deallocation that could lead to undefined behavior.
+
+----------------------------------------------------------------------------------------
+
+2) Global Variable Declaration Fix for GCC Compatibility
+
+In the Matchmove program, the following structures:
+
+HDRDome   *hdr_dome;
+PolyLight *plight_head;
+
+were previously declared as global variables in a header file protected by #ifndef / #endif macros. This approach was originally used to minimize changes in the S3D library from the book "Design and Implementation of 3D Graphics Systems".
+
+However, with newer versions of GCC, this caused multiple definition conflicts during compilation.
+
+The solution was to update the header file to declare these variables as extern:
+
+extern HDRDome   *hdr_dome;
+extern PolyLight *plight_head;
+
+and define them as global variables in their respective .c source files.
+
+----------------------------------------------------------------------------------------
+
+3) Tracking Empty Directories in the Git Repository
+
+The Git repository did not include the empty directories bin, include, and lib in the Matchmove project, nor the empty build directory in the Pathtracing project.
+
+To ensure these directories are tracked by Git, an empty .gitkeep file was added to each of them.
+
+----------------------------------------------------------------------------------------
+
+4) Demo Directory Reference Fixes
+
+Some project demos were referencing incorrect directory paths, which caused them to fail at runtime.
+
+These directory name issues in the demo scripts were identified and corrected, allowing the demos to run properly.
+
+----------------------------------------------------------------------------------------
+
+Additional Notes
+
+The d1.sh demo script, which generates the Cornell Box figure, may take several minutes to complete. This is expected behavior.
+
+The Cornell Box image was designed to achieve high visual quality for inclusion in the book. Since light rays bounce multiple times inside the enclosed environment, and the Monte Carlo integration is implemented in a naive manner, rendering time is significantly increased. The resulting image is 100% synthetic.
+
+This performance issue does not affect the visual effects generation process. In that case, a Radiance Dome encloses the scene, which reduces the number of light bounces.
+
+For the same reason, rendering each frame of the scene composited over the background may also take several minutes. However, it is considerably faster than the Cornell Box rendering, as the average number of ray bounces in the path tracing process is lower.
+
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+

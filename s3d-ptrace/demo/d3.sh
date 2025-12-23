@@ -1,7 +1,7 @@
 #!/bin/sh
 
 
-ROOT=../
+ROOT=..
 DATA=../data
 
 BIN=$ROOT/platforms/linux/bin

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 
-S3D_DEM=../../s3d-v64-2021/test/demo
+S3D_DEM=../../s3d-ptrace/demo/
 
 echo "Coping files..."
 cp ../data/video.mp4  $S3D_DEM
