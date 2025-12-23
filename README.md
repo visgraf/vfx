@@ -7,14 +7,7 @@ Version v1.1.0 is now live. This update addresses known issues and bugs found in
 
 Dependendes
 -------------------------
-gcc
-g++
-bison
-flex
-ffmpeg
-opencv
-openmp
-gsl
+gcc, g++, bison, flex, ffmpeg, opencv, openmp, gsl
 
 
 
