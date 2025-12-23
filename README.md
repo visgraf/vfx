@@ -5,6 +5,19 @@ Notice
 -------------------------
 Version v1.1.0 is now live. This update addresses known issues and bugs found in the initial release.
 
+Dependendes
+-------------------------
+gcc
+g++
+bison
+flex
+ffmpeg
+opencv
+openmp
+gsl
+
+
+
 Result Example
 -------------------------
 <p align="center"><img src="demo.png"></center></p>
