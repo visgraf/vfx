@@ -25,14 +25,12 @@ void seq_extrinsic_calibrate( CalibSequenceContext *cc, gsl_matrix *k  )
 
 void seq_subseq_list_create(  CalibSequenceContext *cc )
 {
- SubSeqNode *aux;
- FeaturesList *fl;
-
  features_list_begin_frag( cc->fl );
+ 
  do{
-    seq_insert_subseq( cc,  subseq_node_alloc( cc, 
-                       fl = features_list_get_next_frag( cc->fl, FRAGMENT_NFRAMES, MIN_MOV_DIST ) ));
-    features_list_dispose( fl );       
+    seq_insert_subseq( cc, subseq_node_alloc( cc, 
+                       features_list_get_next_frag( cc->fl,
+                       FRAGMENT_NFRAMES, MIN_MOV_DIST ) ));     
  }while( !features_list_end_frag() );
 }
 

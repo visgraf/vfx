@@ -26,7 +26,7 @@ typedef struct PolyShadow{
   HDRImage *img;
 }PolyShadow;
 
-HDRDome *hdr_dome;
+extern HDRDome *hdr_dome;
 
 /* HDR Dome Functions */
 

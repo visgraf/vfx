@@ -1,5 +1,6 @@
 #include "plight.h"
 
+PolyLight *plight_head;
 
 
 void init_plight_list( void )

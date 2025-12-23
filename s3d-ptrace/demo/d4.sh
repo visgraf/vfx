@@ -1,8 +1,8 @@
 #!/bin/sh
 
 
-ROOT=../..
-DATA=../../data
+ROOT=../
+DATA=../data
 
 BIN=$ROOT/platforms/linux/bin
 SCN=$DATA/scn

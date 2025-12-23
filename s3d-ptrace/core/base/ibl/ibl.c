@@ -4,6 +4,8 @@
 static Color hdrmap_value( HDRDome *d, Vector3 v );
 static Vector3 change_ref( Vector3 v, HDRDome *d );
 
+HDRDome *hdr_dome;
+
 
 void hdrdome_init( void )
 {
