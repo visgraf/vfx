@@ -7,7 +7,7 @@ Version v1.1.0 is now live. This update addresses known issues and bugs found in
 
 Requirements
 -------------------------
-cmake, make, gcc, g++, bison, flex, ffmpeg, imagemagick, opencv, openmp, gsl
+cmake, make, gcc, g++, bison, flex, ffmpeg, imagemagick, opencv, openmp, gsl, libpng
 
 
 
