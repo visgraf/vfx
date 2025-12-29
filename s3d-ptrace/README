@@ -85,7 +85,10 @@ the code necessary to be inserted into a scene description file. The details
 of this tool is described in the file ./s3d-ptrace/modeler.pdf, and can be
 used to modify the scene ./s3d-ptrace/data/modeling.scn 
 
-Obs: The render programs used for rendering the Cornell Box and the VFX are defined to generate a high quality result. If the user prefer to render it faster, compromising the quality, he/she can reduce the number of rays traced in each pixel reducing the macros MAX_PTRACE_SAMPLES in the files s3d-ptrace/proj/ptrace/main.c  and s3d-ptrace/proj/mmove/main.c
+Obs: The rendering programs used for the Cornell Box and the VFX scenes are configured to produce
+high-quality results. If the user prefers faster rendering at the cost of image quality,
+they can reduce the number of rays traced per pixel by decreasing the MAX_PTRACE_SAMPLES
+macro in the files s3d-ptrace/proj/ptrace/main.c and s3d-ptrace/proj/mmove/main.c.
 
 
 
