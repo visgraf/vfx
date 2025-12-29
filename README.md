@@ -47,6 +47,8 @@ Installation and Testing
 The instructios for intalling and testing these modules are presented
 in the README files inside the directories: ./matchcmove and ./s3d-ptrace.
 
+For those interested in seeing the results as soon as possible, we recommend trying the s3d-ptrace demos first.
+
 Obs: The rendering programs used for the demo of the Cornell Box and for the VFX scenes are configured to produce
 high-quality results. If the user prefers faster rendering at the cost of image quality,
 they can reduce the number of rays traced per pixel by decreasing the MAX_PTRACE_SAMPLES
