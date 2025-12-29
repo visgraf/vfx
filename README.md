@@ -9,7 +9,7 @@ Requirements
 -------------------------
 cmake, make, gcc, g++, bison, flex, ffmpeg, imagemagick, opencv, openmp, gsl, libpng
 
-Since the frames generated as output of the visual effects program are HDR images, you need to be able to open .pfm files. You can use GIMP to do this, or ImageMagick (convert) to convert the .pfm images into .png files.
+Since the frames generated as output of the visual effects program are HDR images, you need to be able to open .pfm files. You can use GIMP to do this, or ImageMagick (convert program) to convert the .pfm images into .png files.
 
 Result Example
 -------------------------
