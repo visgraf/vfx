@@ -45,7 +45,12 @@ Jonas Gomes and Mario Costa Sousa.
 
 Installation and Testing
 ----------------------------
+1) Clone the repository using:
+git clone https://github.com/visgraf/vfx.git
 
+2) Install the required dependencies (OpenCV, GSL, etc.).
+
+3) Build each module:
 The instructios for intalling and testing these modules are presented
 in the README files inside the directories: ./matchcmove and ./s3d-ptrace.
 
