@@ -46,9 +46,9 @@ Jonas Gomes and Mario Costa Sousa.
 Installation and Testing
 ----------------------------
 1) Clone the repository using:
-   
-   - git clone https://github.com/visgraf/vfx.git
-
+```bash
+   git clone https://github.com/visgraf/vfx.git
+```
 3) Install the required dependencies (OpenCV, GSL, etc.).
 
 4) Build and test each module:
