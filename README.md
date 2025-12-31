@@ -53,7 +53,7 @@ Installation and Testing
 
 4) Build and test each module:
    
-  - The instructios for intalling and testing these modules are presented
+  - The instructios for building and testing these modules are presented
 in the README files inside the directories: ./matchcmove and ./s3d-ptrace.
 
   - For those interested in seeing the results as soon as possible, we recommend trying the s3d-ptrace demos first.
