@@ -1,7 +1,7 @@
 ﻿Matchmove Software
 ==================
 
-This is the software module responsible for implementing the Matchmove routines. 
+This is the module responsible for implementing the Matchmove routines. 
 The outputs of this module are inputs of the module s3d-ptrace.
 
 The code is part of the book: "Introduction to Visual Effects: A Computational Approach"
