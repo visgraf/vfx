@@ -2,7 +2,7 @@
 ==================
 
 This is the module responsible for implementing the Matchmove routines. 
-The outputs of this module are inputs of the module s3d-ptrace.
+The outputs of this module are inputs for the module s3d-ptrace.
 
 The code is part of the book: "Introduction to Visual Effects: A Computational Approach"
 by Bruno Madeira and Luiz Velho.
