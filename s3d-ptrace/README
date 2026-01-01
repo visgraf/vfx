@@ -2,9 +2,11 @@
 =======================
 
 This is the software module responsible for implementing the Pathtracing and
-Image Based Lighting routines. It uses as its inputs files generated  by the
+Image Based Lighting routines. It uses as its inputs files geDnerated  by the
 module ./matchmove. 
 
+The code is part of the book: "Introduction to Visual Effects: A Computational Approach"
+by Bruno Madeira and Luiz Velho.
 
 CONTENTS
 --------
