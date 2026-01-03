@@ -37,7 +37,7 @@ INSTALLATION
 ------------
 
 To install the Linux software run these commands in the "build" directory
-    cmake ../core
+    cmake -DCMAKE_POLICY_VERSION_MINIMUM=3.5 ../core/
     make
     make install
 
