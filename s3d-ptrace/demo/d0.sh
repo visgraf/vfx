@@ -8,8 +8,16 @@ BIN=$ROOT/platforms/linux/bin
 
 echo "Coping hdrdome picture..."
 cp $DATA/dome.pfm ./
+
 echo "Generating Back Groud images..."
-convert video.mp4 -endian lsb bk%d.pfm
+ffmpeg -i video.mp4 -vf "fps=30" frame%04d.png
+counter=0
+for file in frame*.png; do
+  convert "$file" -endian lsb "bk${counter}.pfm"
+  counter=$((counter + 1))
+done
+rm frame*.png
+
 
 
 
