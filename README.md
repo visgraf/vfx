@@ -10,19 +10,6 @@ Version v1.1.0 is now live. This update addresses known issues and bugs found in
 Requirements
 -------------------------
 cmake, make, gcc, g++, bison, flex, ffmpeg, imagemagick, opencv, openmp, gsl, libpng
-```bash
-   sudo apt update && sudo apt install -y \
-   cmake \
-   build-essential \
-   bison \
-   flex \
-   ffmpeg \
-   imagemagick \
-   libopencv-dev \
-   libomp-dev \
-   libgsl-dev \
-   libpng-dev
-```
 
 Since the frames generated as output of the visual effects program are HDR images, you need to be able to open .pfm files. You can use GIMP to do this, or ImageMagick (convert program) to convert the .pfm images into .png or .jpg files.
 
@@ -63,6 +50,19 @@ Installation and Testing
    git clone https://github.com/visgraf/vfx.git
 ```
 3) Install the required dependencies (OpenCV, GSL, etc.).
+```bash
+   sudo apt update && sudo apt install -y \
+   cmake \
+   build-essential \
+   bison \
+   flex \
+   ffmpeg \
+   imagemagick \
+   libopencv-dev \
+   libomp-dev \
+   libgsl-dev \
+   libpng-dev
+```
 
 4) Build and test each module:
    
