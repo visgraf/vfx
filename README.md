@@ -69,7 +69,7 @@ Installation and Testing
   - The instructios for building and testing these modules are presented
 in the README files inside the directories: ./matchcmove and ./s3d-ptrace.
 
-  - We very recommend trying the s3d-ptrace demos first.
+  - We highly recommend trying the s3d-ptrace demos first.
 
   - Note: The rendering programs used for the demo of the Cornell Box and for the VFX scenes are configured to produce
 high-quality results. If the user prefers faster rendering at the cost of image quality,
