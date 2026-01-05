@@ -52,6 +52,19 @@ how to use the software routines. Besides that, there are many other files
  necessary for running the scripts in the correct way. Most of them are generated
 by the module matchmove. 
 
+Note: The rendering programs use a high value for the MAX_PTRACE_SAMPLES macro by default, 
+which produces high-quality images but results in very slow rendering. Users who want 
+faster rendering must reduce this value, accepting a decrease in image quality. As an 
+initial test, setting MAX_PTRACE_SAMPLES to 10 is recommended.
+
+The rendering programs do not provide any feedback indicating that they are processing, 
+and rendering may take a significant amount of time, especially with the default settings. 
+The MAX_PTRACE_SAMPLES macro can be modified in the files 
+s3d-ptrace/proj/ptrace/main.c and s3d-ptrace/proj/mmove/main.c.
+
+For a better first experience with the library, it is recommended to run the d0.sh demo 
+first, followed by the d3.sh demo.
+
 The scripts do the following processing:
 
 d0.sh: This script converts the video ./s3d-ptrace/demo/video.mp4 into hdr images,
@@ -79,19 +92,14 @@ illumination, and image based lighting  correspondent to the scene
 ./s3d-ptrace/data/modeling.scn  and cameras described by the file 
 ./s3d-ptrace/demo/cam_refined.txt. The output frames, named by out%d.pfm, correspond to
  the demo video ./demo.mp4. 
-This program takes more than 24Hs to generate all the frames using a core i7 machine.
- The implementation of the code is presented on the Section 10.13 of the book. 
+This program takes more than 24Hs to generate all the frames using a core i7 machine using
+the default configuration. The implementation of the code is presented on the 
+Section 10.13 of the book. 
 
 d5.sh: This script runs a textual scene modeler tool designed to generate
 the code necessary to be inserted into a scene description file. The details
 of this tool is described in the file ./s3d-ptrace/modeler.pdf, and can be
 used to modify the scene ./s3d-ptrace/data/modeling.scn 
-
-Obs: The rendering programs used for the Cornell Box and the VFX scenes are configured to produce
-high-quality results. If the user prefers faster rendering at the cost of image quality,
-they can reduce the number of rays traced per pixel by decreasing the MAX_PTRACE_SAMPLES
-macro in the files s3d-ptrace/proj/ptrace/main.c and s3d-ptrace/proj/mmove/main.c.
-
 
 
 Interdependence of the Modules
