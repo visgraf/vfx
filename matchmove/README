@@ -84,7 +84,9 @@ scene  modeler tool of the module ./s3d-ptrace as explained in the Section 10.8
 of the book.
 
 d4: This script is responsible for copying the output files of this module to the
-module s3d-ptrace
+s3d-ptrace module. Note that this demo interferes with the s3d-ptrace demo tests, so
+do not run it unless you are sure you want to do so. We strongly recommend that you
+explore the s3d-ptrace demos before running this script.
 
 
 COMPATIBILITY
