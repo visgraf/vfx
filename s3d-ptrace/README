@@ -114,7 +114,7 @@ The unique exception are the dependence of
 ./s3d-ptrace/demo/d2, ./s3d-ptrace/demo/d3 and ./s3d-ptrace/demo/d4
  which depend to the execution of ./s3d-ptrace/demo/d0 before once.  
 Using the scripts defined on this package with the default configuration the
-user can generates the video ./demo.mp4.
+user can generates the video ../video/demo.mp4.
  
 
 COMPATIBILITY
