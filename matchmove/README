@@ -60,12 +60,12 @@ projections over some frames. More preciselly, it rurns the program presented
   ./matchmove/demo/points3d.txt.  These points are used by the module 
   ./s3d-ptrace to specify the geometry of the polygon that projects the shadows
   of synthetic objects. The user must do steps like these:
-  
-  1) select 3 points over the table
-  2) press space bar
-  3) move the slider bar to another frame
-  4) select the same points over the 3d table
-  repeat the steps 1 to 4 some times and press esc 
+
+  Repeat the steps 1 to 3 some times and press esc: 
+    1) select 3 points over the table
+    2) press space bar
+    3) move the slider bar to another frame.
+  Note: select the always the same points over the 3d table in the same order.
   
   
 d3: This script firstly capures coordinates of six 3D points over some frames of 
