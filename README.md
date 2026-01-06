@@ -86,7 +86,7 @@ input files necessary for running almost all the scripts are available.
 The unique exception are the dependence of 
 ./s3d-ptrace/demo/d2, ./s3d-ptrace/demo/d3 and ./s3d-ptrace/demo/d4
  which depend to the execution of ./s3d-ptrace/demo/d0 before.  
-Using the scripts defined on this package the user can generates
+Using the scripts defined on this package the user can generate
   videos like ./video/demo.mp4.
 
 <hr>
