@@ -59,7 +59,7 @@ setting MAX_PTRACE_SAMPLES to 10 is recommended. If you are trying this for the 
 have not done so yet, you should do it and then reinstall the s3d-ptrace module, repeating the
 steps given in the previous section. After the first test, feel free to test other values.
 The MAX_PTRACE_SAMPLES macro can be modified in the files 
-s3d-ptrace/proj/ptrace/main.c and s3d-ptrace/proj/mmove/main.c.
+s3d-ptrace/core/proj/ptrace/main.c and s3d-ptrace/core/proj/mmove/main.c.
 
 The rendering programs do not provide any feedback indicating that they are processing, 
 and rendering may take a significant amount of time, especially with the default settings. 
