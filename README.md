@@ -63,12 +63,14 @@ Installation and Testing
    libgsl-dev \
    libpng-dev
 ```
+4) Follow the first test tutorial (first_test.pdf): 
 
-4) Build and test each module:
+5) After following the first test tutorial, go read the documentation in the README files inside
+   the directories: ./matchcmove and ./s3d-ptrace.
+   In order to learning how to install and use the system, you will need the book for better compreension, but
+   we are working on a complete user tutorial explaining how to combine all the availabe scripts of the software
+   to produce a complete visual effect. 
    
-  - The instructios for building and testing these modules are presented
-in the README files inside the directories: ./matchcmove and ./s3d-ptrace.
-
   - We highly recommend trying the s3d-ptrace demos first.
 
   - Note: The rendering programs used for the demo of the Cornell Box and for the VFX scenes are configured to produce
