@@ -65,9 +65,9 @@ Installation and Testing
 ```
 4) Follow the instructions in the first test tutorial ([first_test.pdf](first_test.pdf)): 
 
-5) After following the first test tutorial, go read the documentation in the README files inside
+5) After following the first test tutorial, read the documentation in the README files inside
    the directories: ./matchcmove and ./s3d-ptrace.
-   In order to learning how to install and use the system, you will need the book for better compreension, but
+   To learning how to install and use the system, you will need the book for better compreension, but
    we are working on a complete user tutorial explaining how to combine all the availabe scripts of the software
    to produce a complete visual effect. 
    
