@@ -63,7 +63,7 @@ Installation and Testing
    libgsl-dev \
    libpng-dev
 ```
-4) Follow the first test tutorial (first_test.pdf): 
+4) Follow the first test tutorial ([first_test.pdf]first_test.pdf): 
 
 5) After following the first test tutorial, go read the documentation in the README files inside
    the directories: ./matchcmove and ./s3d-ptrace.
