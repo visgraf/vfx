@@ -5,7 +5,9 @@ The user should keep in mind that this software was developed to be an education
 
 Notice
 -------------------------
-Version v1.1.0 is now live. This update addresses known issues and bugs found in the initial release.
+1) A new version of the matchmove module is now available in https://github.com/brmadeira/matchmove it is much faster than the one presented in the book because it uses parallelism using OpenMP and the Non-Linear Least Squares are solved using the ceres-solver library based on automatic differentiation instead of finite differences. You can replace the matchmove folder by the fast version, install ceres-solver, and follow the instructions to install and install and use this software normally. 
+     
+3) Version v1.1.0 is now live. This update addresses known issues and bugs found in the initial release.
 
 Requirements
 -------------------------
